@@ -1,6 +1,6 @@
 main: src.Aboot
 name: Aboot
-version: 1.0
+version: 1.1.2
 
 commands:
    aboot:
@@ -8,3 +8,10 @@ commands:
       usage: /aboot <player>
       permission: Aboot.aboot
       permission-message: You don't have permission.
+   abootall:
+      description: Toggles Aboot forevery player.
+      usage: /abootall
+      permission: Aboot.abootall
+      permission-message: You don't have permission.
+
+

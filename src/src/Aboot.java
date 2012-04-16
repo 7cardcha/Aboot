@@ -18,6 +18,8 @@ public class Aboot extends JavaPlugin
 	
 	public static HashMap<String, Boolean> aboot = new HashMap<String, Boolean>();
 	
+	public static boolean abootAll;
+	
 	public void onEnable()
 	{
 		file = new File("AbootCFG.yml");
@@ -68,7 +70,25 @@ public class Aboot extends JavaPlugin
 			}
 			return true;
 		}
+		
+		if(cmd.getName().equalsIgnoreCase("abootall"))
+		{
+			abootAll = !abootAll;
+			
+			if(abootAll)
+			{
+				sender.sendMessage("Aboot enabled for everybody.");
+			}
+			else
+			{
+				sender.sendMessage("Aboot disabled for everybody.");
+			}
+			
+			return true;
+		}
+		
 		return false;
 	}
+	
 	
 }

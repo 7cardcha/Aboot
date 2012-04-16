@@ -1,0 +1,10 @@
+main: src.Aboot
+name: Aboot
+version: 1.0
+
+commands:
+   aboot:
+      description: Toggles Aboot for a player.
+      usage: /aboot <player>
+      permission: Aboot.aboot
+      permission-message: You don't have permission.

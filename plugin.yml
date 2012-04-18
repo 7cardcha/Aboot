@@ -1,6 +1,6 @@
 main: src.Aboot
 name: Aboot
-version: 1.1.2
+version: 1.2.4
 
 commands:
    aboot:
@@ -8,10 +8,28 @@ commands:
       usage: /aboot <player>
       permission: Aboot.aboot
       permission-message: You don't have permission.
+   aussie:
+      description: Toggles Aussie for a player.
+      usage: /aussie <player>
+      permission: Aboot.aussie
+      permission-message: You don't have permission.
    abootall:
-      description: Toggles Aboot forevery player.
+      description: Toggles Aboot for every player.
       usage: /abootall
       permission: Aboot.abootall
+   aussieall:
+      description: Toggles Aussie for every player.
+      usage: /aussieall
+      permission: Aboot.aussieall
       permission-message: You don't have permission.
+   abootreload:
+      description: Reloads the config file..
+      usage: /abootreload
+      permission: Aboot.reload
+      permission-message: You don't have permission.
+
+
+
+
 
 

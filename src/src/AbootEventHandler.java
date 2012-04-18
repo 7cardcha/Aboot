@@ -17,6 +17,13 @@ public class AbootEventHandler implements Listener{
 			s = s + " eh?";
 			event.setMessage(s);
 		}
+		
+		if(Aboot.config1.contains(event.getPlayer().getName()) || Aboot.aussie.containsKey(event.getPlayer().getName()) || Aboot.aussieAll)
+		{
+			String s = event.getMessage();
+			s = s + " mate";
+			event.setMessage(s);
+		}
 	}
 	
 }

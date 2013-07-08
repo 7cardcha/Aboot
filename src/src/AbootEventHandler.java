@@ -3,12 +3,12 @@ package src;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerChatEvent;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 
 public class AbootEventHandler implements Listener{
 	@EventHandler(priority = EventPriority.NORMAL)
-	public void onPlayerChat(PlayerChatEvent event)
+	public void onPlayerChat(AsyncPlayerChatEvent event)
 	{
 		if(Aboot.config.contains(event.getPlayer().getName()) || Aboot.aboot.containsKey(event.getPlayer().getName()) || Aboot.abootAll)
 		{
